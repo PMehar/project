@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Information</title>
+    <link rel="stylesheet" href="cricket.css">
+    <script src="cricket.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js" integrity="sha512-WrdC3CE9vf1nBf58JHepuWT4x24uTacky9fuzw2g/3L9JkihgwZ6Cfv+JGTtNyosOhEmttMtEZ6H3qJWfI7gIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <h1>Player Information</h1>
+    <div class="container">
+        <div class="box">
+            <form action="#" onsubmit="registerPlayer(event)" id="register" method="get">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" ><br> <br>
+
+                <label for="birth">Date of Birth: </label>
+                <input type="text" name="birth" id="birth"><br><br>
+
+                <label for="url">Photo Url: </label>
+                <input type="text" name="url" id="url"><br><br>
+
+                <label for="birth_place">Birth Place: </label>
+                <input type="text" name="birth_place" id="birth_place"><br><br>
+
+                <label for="career">Career: </label>
+                <textarea name="career" id="career" cols="30" rows="6"></textarea><br><br>
+
+                <label for="matches">Number of Matches: </label>
+                <input type="textarea" name="matches" id="matches"><br><br>
+
+                <label for="score">Score: </label>
+                <input type="text" name="score" id="score"><br><br>
+
+                <label for="fifties">Fifties: </label>
+                <input type="text" name="fifties" id="fifties"><br><br>
+
+                <label for="centuries">Centuries: </label>
+                <input type="text" name="centuries" id="centuries"><br><br>
+
+                <label for="wickets">Wickets: </label>
+                <input type="text" name="wickets" id="wickets"><br><br>
+
+                <label for="avg">Avarage: </label>
+                <input type="text" name="avg" id="avg"><br><br>
+
+                <button type="submit">Submit</button>
+            </form>    
+        </div>  
+    </div>
+    <div class="search">
+        <input type="text" name="search" id="search">
+        <button type="submit">Search</button>
+    </div>
+    <div class="search_2">
+        <ul id="list"></ul>
+    </div>
+</body>
+</html>
