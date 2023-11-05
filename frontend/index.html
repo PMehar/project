@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog App</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js" integrity="sha512-WrdC3CE9vf1nBf58JHepuWT4x24uTacky9fuzw2g/3L9JkihgwZ6Cfv+JGTtNyosOhEmttMtEZ6H3qJWfI7gIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="container">
+        <h3>Create a New Blog Post</h3>
+        <div class="box">
+            <form action="#" onsubmit="registerBlog(event)" id="register" method="get">
+                <label for="title">Blog Title:</label>
+                <input type="text" name="title" id="title"><br> <br>
+                <label for="author">Blog Author: </label>
+                <input type="text" name="author" id="author"><br><br>
+                <label for="content">Blog Content: </label><br>
+                <textarea name="content" id="content" cols="41" rows="8"></textarea>
+                <button id = "submit"type="submit">Submit</button>
+            </form>    
+        </div>  
+    </div>
+    <div class="blog_list">
+        <ul id="list"></ul>
+    </div>
+</body>
+</html>
